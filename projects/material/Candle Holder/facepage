@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projects – Code a Girl</title>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Projects</h1>
+    <h2>Code - A - Girl</h2>
+    <p>Future Engineer | Creator | Problem Solver</p>
+     <nav>
+      <ul>
+        <a href="../home/">Home</a>
+        <a href="../blog/">Blog</a>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="ProjectName">
+   <h2>Candle Holder</h2>
+
+  <div class="image">
