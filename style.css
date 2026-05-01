@@ -13,12 +13,15 @@
   }
   
   body {
-    font-family: "Bradley Hand", "Marker Felt", cursive
+
+    font-family: Bradley Hand, cursive;
     background-color: #BDDFF4;
     color: #333;
     line-height: 1.6;
     padding: 50px;
+
   }
+
   
   /* Header Section */
   header {
