@@ -72,7 +72,18 @@
     background-color: #e9f5f5;
     border-radius: 4px;
   }
-  
+  /* This targets the image specifically inside that div */
+  .image img {
+    max-width: 100%;    /* Prevents the image from being wider than the screen */
+    height: auto;       /* Maintains the original proportions */
+    display: block;     /* Removes extra space at the bottom */
+    margin: 0 auto;     /* Centers the image if you give it a smaller width */
+    
+    /* Optional: Set a specific size for your portfolio layout */
+    width: 600px;       /* Adjust this number until it looks 'right' to you */
+    border-radius: 8px; /* Optional: adds soft rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adds a subtle depth */
+  }
   /* Footer */
   footer {
     text-align: center;
