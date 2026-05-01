@@ -74,15 +74,14 @@
   }
   /* This targets the image specifically inside that div */
   .image img {
-    max-width: 100%;    /* Prevents the image from being wider than the screen */
-    height: auto;       /* Maintains the original proportions */
-    display: block;     /* Removes extra space at the bottom */
-    margin: 0 auto;     /* Centers the image if you give it a smaller width */
-    
-    /* Optional: Set a specific size for your portfolio layout */
-    width: 600px;       /* Adjust this number until it looks 'right' to you */
-    border-radius: 8px; /* Optional: adds soft rounded corners for a modern look */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adds a subtle depth */
+    display: block;
+    margin: 20px auto;   /* Added 20px top/bottom margin to give it breathing room */
+    max-width: 100%;     /* Keeps it responsive on phones */
+    width: 500px;        /* Shrink this number if you want it even smaller */
+    max-height: 400px;   /* Added this so long vertical photos don't swallow the page */
+    object-fit: contain; /* Ensures the photo isn't stretched */
+    border-radius: 12px; 
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15); /* Slightly stronger shadow for a "pop" */
   }
   /* Footer */
   footer {
