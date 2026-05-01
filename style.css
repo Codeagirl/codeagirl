@@ -83,6 +83,12 @@
     border-radius: 12px; 
     box-shadow: 0 8px 16px rgba(0,0,0,0.15); /* Slightly stronger shadow for a "pop" */
   }
+  .textbody {
+    padding: 20px;
+    max-width: 700px;    /* Keeps lines of text from being too long to read */
+    margin: 0 auto;      /* Centers the text block */
+    text-align: center;  /* Makes the description match the centered image */
+  }
   /* Footer */
   footer {
     text-align: center;
