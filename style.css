@@ -1,5 +1,4 @@
 /* CSS Reset */
-  @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 /* This resets some default browser styles */
   html, body, h1, h2, p, ul, li {
     margin: 0;
@@ -14,7 +13,7 @@
   }
   
   body {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     background-color: #BDDFF4;
     color: #333;
     line-height: 1.6;
