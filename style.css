@@ -53,20 +53,37 @@
   nav a:hover {
     text-decoration: underline;
   }
+
+
   .project-container {
-    display: flex;         /* The 'magic' line for side-by-side */
-    align-items: center;   /* Centers them vertically */
-    justify-content: center; 
-    gap: 30px;             /* Adds a nice gap between the photo and text */
-    flex-wrap: wrap;       /* Makes it stack on top of each other on phones */
+    display: flex;
+    flex-wrap: wrap;       /* Allows the title to sit on its own line */
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+    /* This creates the big white box around the whole project */
+    background-color: white;
+    padding: 40px;
+    margin-top: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   }
 
-  /* Make sure each side takes up about half the space */
+  .project-title {
+    width: 100%;          /* Forces the title to take up the top row */
+    text-align: left;     /* Keeps the title on the left like your original */
+    margin-bottom: 20px;
+    color: #0a9396;       /* Your signature teal color */
+  }
+
+/* Make sure the sections don't have their own boxes anymore */
   #CandleHolder, #CandleHolderDescription {
     flex: 1;
-    min-width: 300px;      /* Prevents them from getting too skinny */
-    background: none;      /* Removes the individual white boxes */
+    min-width: 300px;
+    background: transparent;
     box-shadow: none;
+    padding: 10px;
   }
 
   /* Section Styling */
