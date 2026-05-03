@@ -78,17 +78,29 @@
   }
 
 /* Make sure the sections don't have their own boxes anymore */
- #CandleHolder {
+  #CandleHolder {
     flex: 2;          /* This tells the image to try and take up 2x more space than the text */
     min-width: 400px; /* Increased this so it stays large */
     display: flex;
     justify-content: center;
-}
+  }
  
-#CandleHolderDescription {
+  #CandleHolderDescription {
     flex: 1;          /* The text will take up the remaining space */
     min-width: 300px;
-}
+  }
+
+  /* This kills the inner white boxes for this specific project */
+  #CandleHolder, 
+  #CandleHolderDescription, 
+  #CandleHolder .image {
+    background-color: transparent !important; /* !important forces it to work */
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+  }
+
+
 
   /* Section Styling */
   section {
@@ -118,7 +130,7 @@
     margin: 20px auto;   /* Added 20px top/bottom margin to give it breathing room */
     max-width: 100%;     /* Keeps it responsive on phones */
     width: 500px;        /* Shrink this number if you want it even smaller */
-    max-height: 400px;   /* Added this so long vertical photos don't swallow the page */
+    max-height: auto;   
     object-fit: contain; /* Ensures the photo isn't stretched */
     border-radius: 12px; 
     background-color: transparent; /* Removes the extra white box */
