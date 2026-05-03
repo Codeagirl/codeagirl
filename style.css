@@ -19,7 +19,7 @@
     color: #333;
     line-height: 1.6;
     padding: 50px;
-    font-size: 1.1em;
+    font-size: 1.6em;
 
   }
 
@@ -53,7 +53,22 @@
   nav a:hover {
     text-decoration: underline;
   }
-  
+  .project-container {
+    display: flex;         /* The 'magic' line for side-by-side */
+    align-items: center;   /* Centers them vertically */
+    justify-content: center; 
+    gap: 30px;             /* Adds a nice gap between the photo and text */
+    flex-wrap: wrap;       /* Makes it stack on top of each other on phones */
+  }
+
+  /* Make sure each side takes up about half the space */
+  #CandleHolder, #CandleHolderDescription {
+    flex: 1;
+    min-width: 300px;      /* Prevents them from getting too skinny */
+    background: none;      /* Removes the individual white boxes */
+    box-shadow: none;
+  }
+
   /* Section Styling */
   section {
     margin-top: 40px;
