@@ -85,7 +85,9 @@
     max-height: 400px;   /* Added this so long vertical photos don't swallow the page */
     object-fit: contain; /* Ensures the photo isn't stretched */
     border-radius: 12px; 
-    box-shadow: 0 8px 16px rgba(0,0,0,0.15); /* Slightly stronger shadow for a "pop" */
+    background-color: transparent; /* Removes the extra white box */
+    box-shadow: none;             /* Removes any shadow from the container */
+    padding: 0;
   }
   .textbody {
     padding: 20px;
