@@ -129,7 +129,7 @@
     display: block;
     margin: 20px auto;   /* Added 20px top/bottom margin to give it breathing room */
     max-width: 100%;     /* Keeps it responsive on phones */
-    width: 500px;        /* Shrink this number if you want it even smaller */
+    width: auto;        /* Shrink this number if you want it even smaller */
     max-height: auto;   
     object-fit: contain; /* Ensures the photo isn't stretched */
     border-radius: 12px; 
