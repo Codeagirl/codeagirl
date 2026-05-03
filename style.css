@@ -78,13 +78,17 @@
   }
 
 /* Make sure the sections don't have their own boxes anymore */
-  #CandleHolder, #CandleHolderDescription {
-    flex: 1;
+ #CandleHolder {
+    flex: 2;          /* This tells the image to try and take up 2x more space than the text */
+    min-width: 400px; /* Increased this so it stays large */
+    display: flex;
+    justify-content: center;
+}
+ 
+#CandleHolderDescription {
+    flex: 1;          /* The text will take up the remaining space */
     min-width: 300px;
-    background: transparent;
-    box-shadow: none;
-    padding: 10px;
-  }
+}
 
   /* Section Styling */
   section {
