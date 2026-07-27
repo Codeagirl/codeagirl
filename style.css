@@ -1,152 +1,132 @@
-/* CSS Reset */
-/* This resets some default browser styles */
-  html, body, h1, h2, p, ul, li {
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Universal Selector */
+/* Universal Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    font-family: Bradley Hand, cursive;
-    background-color: #BDDFF4;
-    color: #333;
-    line-height: 1.6;
-    padding: 50px;
-    font-size: 1.6em;
+body {
+  font-family: "Bradley Hand", cursive;
+  background-color: #BDDFF4;
+  color: #333;
+  line-height: 1.6;
+  padding: 50px;
+  font-size: 1.6em;
+}
 
-  }
+/* Header Section */
+header {
+  font-family: Garamond, serif;
+  background-color: #B70963;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 150px;
+}
 
-  
-  /* Header Section */
-  header {
-    font-family: Garamond, serif;
-    background-color: #B70963;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    border-radius: 150px;
-  }
-  
-  header h1 {
-    font-size: 3em;
-  }
-  
-  header p {
-    font-size: 1.5em;
-    margin-top: 2px;
-  }
-  
-  nav a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  nav a:hover {
-    text-decoration: underline;
-  }
+header h1 {
+  font-size: 3em;
+}
 
+header p {
+  font-size: 1.5em;
+  margin-top: 2px;
+}
 
-  .project-container {
-    display: flex;
-    flex-wrap: wrap;       /* Allows the title to sit on its own line */
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    
-    /* This creates the big white box around the whole project */
-    background-color: white;
-    padding: 40px;
-    margin-top: 40px;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  }
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-  .project-title {
-    width: 100%;          /* Forces the title to take up the top row */
-    text-align: left;     /* Keeps the title on the left like your original */
-    margin-bottom: 20px;
-    color: #0a9396;       /* Your signature teal color */
-  }
+nav a:hover {
+  text-decoration: underline;
+}
 
-/* Make sure the sections don't have their own boxes anymore */
-  #CandleHolder#DiceTower {
-    flex: 2;          /* This tells the image to try and take up 2x more space than the text */
-    min-width: 400px; /* Increased this so it stays large */
-    display: flex;
-    justify-content: center;
-  }
- 
-  #CandleHolderDescription#DiceTowerDescription {
-    flex: 1;          /* The text will take up the remaining space */
-    min-width: 300px;
-  }
+/* Section & Container Styling */
+section {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
 
-  /* This kills the inner white boxes for this specific project */
-  #CandleHolder, 
-  #CandleHolderDescription, 
-  #CandleHolder .image {
-    background-color: transparent !important; /* !important forces it to work */
-    box-shadow: none !important;
-    border: none !important;
-    padding: 0 !important;
-  }
+h2 {
+  color: #0a9396;
+  margin-bottom: 10px;
+}
 
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: white;
+  padding: 40px;
+  margin-top: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
 
+.project-title {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px;
+  color: #0a9396;
+}
 
-  /* Section Styling */
-  section {
-    margin-top: 40px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.05);
-  }
-  
-  h2 {
-    color: #0a9396;
-    margin-bottom: 10px;
-  }
-  
-  /* Project Box */
-  .project {
-    margin-top: 15px;
-    padding: 10px;
-    border-left: 5px solid #94d2bd;
-    background-color: #e9f5f5;
-    border-radius: 4px;
-  }
-  /* This targets the image specifically inside that div */
-  .image img {
-    display: block;
-    margin: 20px auto;   /* Added 20px top/bottom margin to give it breathing room */
-    max-width: 100%;     /* Keeps it responsive on phones */
-    width: auto;        /* Shrink this number if you want it even smaller */
-    max-height: 900px;   
-    object-fit: contain; /* Ensures the photo isn't stretched */
-    border-radius: 12px; 
-    background-color: transparent; /* Removes the extra white box */
-    box-shadow: none;             /* Removes any shadow from the container */
-    padding: 0;
-  }
-  .textbody {
-    padding: 20px;
-    max-width: 700px;    /* Keeps lines of text from being too long to read */
-    margin: 0 auto;      /* Centers the text block */
-    text-align: center;  /* Makes the description match the centered image */
-  }
-  /* Footer */
-  footer {
-    text-align: center;
-    margin-top: 50px;
-    color: #888;
-  }
+.project {
+  margin-top: 15px;
+  padding: 10px;
+  border-left: 5px solid #94d2bd;
+  background-color: #e9f5f5;
+  border-radius: 4px;
+}
+
+/* Project Layout Fixes */
+#CandleHolder, #DiceTower {
+  flex: 2;
+  min-width: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.description {
+  flex: 1;
+  min-width: 300px;
+}
+
+.project .image {
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+  padding: 0;
+}
+
+.image img {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  width: auto;
+  max-height: 900px;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.textbody {
+  padding: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  color: #888;
+}
   
