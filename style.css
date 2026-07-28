@@ -1,60 +1,168 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Projects – Code a Girl</title>
-  <link rel="stylesheet" href="../../style.css">
-</head>
-<body>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <header>
-    <h1>Projects</h1>
-    <p class="subtitle">Code - A - Girl</p>
-    <p>Future Engineer | Creator | Problem Solver</p>
-    <nav>
-      <ul>
-        <a href="../home/">Home</a>
-        <a href="../blog/">Blog</a>
-      </ul>
-    </nav>
-  </header>
+body {
+  font-family: "Bradley Hand", cursive, sans-serif;
+  background-color: #BDDFF4;
+  color: #333;
+  line-height: 1.6;
+  padding: 50px;
+  font-size: 1.6em;
+}
 
-  <section id="the-workshop">
-    <h2>The Workshop</h2>
-    <p>Explore the different sections of my work—from coding and engineering to creative builds and beyond. Each category gives you a glimpse into the unique projects I’m passionate about.</p>
-    
-    <!-- Wrapper for grid alignment -->
-    <div class="projects-grid">
-      <div class="project">
-        <h3><a href="star/">🌟 Star Projects</a></h3>
-        <p>Explore standout builds that highlight my journey through engineering and design</p>
-      </div>
+header {
+  font-family: Garamond, serif;
+  background-color: #B70963;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 150px;
+}
 
-      <div class="project">
-        <h3><a href="coding/">💻 Coding Projects</a></h3>
-        <p>Projects written in code, designed to create, connect, and explore.</p>
-      </div>
+header h1 {
+  font-size: 3em;
+}
 
-      <div class="project">
-        <h3><a href="Engineering/">🔧 Engineering Projects</a></h3>
-        <p>From concept to creation, these projects highlight my engineering journey.</p>
-      </div>
+header h2 {
+  color: white;
+  font-size: 1.8em;
+  margin-top: 5px;
+}
 
-      <div class="project">
-        <h3><a href="material/">🪵 Material Projects</a></h3>
-        <p>Hands-on projects using wood, fabric, cardboard, and more to bring ideas to life.</p>
-      </div>
-    </div>
-  </section>
+header p {
+  font-size: 1.3em;
+  margin-top: 2px;
+}
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email me at <a href="mailto:violet@codeagirl.com">violet@codeagirl.com</a></p>
-  </section>
+nav {
+  margin-top: 10px;
+}
 
-  <footer>
-    <p>© 2025-2026 Code a Girl</p>
-  </footer>
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+}
 
-</body>
-</html>
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  margin-top: 40px;
+  padding: 25px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+  color: #0a9396;
+  margin-bottom: 10px;
+}
+
+section a,
+.project a,
+.description a,
+.textbody a {
+  color: #0a9396;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section a:hover,
+.project a:hover,
+.description a:hover,
+.textbody a:hover {
+  text-decoration: underline;
+}
+
+/* Safe layout for project cards */
+.project {
+  margin-top: 15px;
+  padding: 20px;
+  border-left: 5px solid #0a9396;
+  background-color: #f0f8ff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease;
+}
+
+.project:hover {
+  transform: translateY(-3px);
+}
+
+.project h3 {
+  margin-bottom: 8px;
+}
+
+.project-container {
+  background-color: white;
+  padding: 35px;
+  margin-top: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.project-title {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 15px;
+  color: #0a9396;
+}
+
+.description,
+.textbody {
+  background-color: #f0f8ff;
+  border-left: 5px solid #0a9396;
+  border-radius: 10px;
+  padding: 25px;
+  text-align: left;
+  display: flow-root;
+}
+
+.image,
+#CandleHolder,
+#DiceTower {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.image img,
+#CandleHolder img,
+#DiceTower img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  max-height: 450px;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+@media (min-width: 768px) {
+  .image,
+  #CandleHolder,
+  #DiceTower {
+    float: right;
+    width: 40%;
+    margin-left: 25px;
+    margin-bottom: 15px;
+  }
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+  color: #888;
+}
