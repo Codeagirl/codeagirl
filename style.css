@@ -88,7 +88,7 @@ h2 {
   display: block;
   max-width: 100%;
   height: auto;
-  max-height: 450px;
+  max-height: 500px;
   margin: 0 auto;
   border-radius: 12px;
 }
@@ -96,7 +96,7 @@ h2 {
 @media (min-width: 768px) {
   .image {
     float: right;
-    width: 40%;
+    width: 50%;
     margin-left: 25px;
     margin-bottom: 15px;
   }
