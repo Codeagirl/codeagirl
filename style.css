@@ -96,7 +96,7 @@ h2 {
 @media (min-width: 768px) {
   .image {
     float: right;
-    width: 80%;
+    width: 50%;
     margin-left: 25px;
     margin-bottom: 15px;
   }
